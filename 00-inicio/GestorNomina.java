@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class GestorNomina {
     private ArrayList<Empleado> empleados = new ArrayList<>();
-    private ConfiguracionNomina config = new ConfiguracionNomina();
+    private ConfiguracionNomina config = ConfiguracionNomina.getInstancia();
 
     public ConfiguracionNomina getConfig() {
         return config;

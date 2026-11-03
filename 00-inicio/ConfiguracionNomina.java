@@ -1,7 +1,15 @@
 public class ConfiguracionNomina {
     private double porcentajeSalud = 0.04;
+    private static ConfiguracionNomina instancia;
 
-    public ConfiguracionNomina() {
+    private ConfiguracionNomina() {
+    }
+
+    public static ConfiguracionNomina getInstancia(){
+        if(instancia == null ){
+            instancia = new ConfiguracionNomina();
+        }
+        return instancia;
     }
 
     public double getPorcentajeSalud() {

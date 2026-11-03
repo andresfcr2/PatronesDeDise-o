@@ -1,5 +1,5 @@
 public class ExportadorCSV {
-    private ConfiguracionNomina config = new ConfiguracionNomina();
+    private ConfiguracionNomina config = ConfiguracionNomina.getInstancia();
 
     public String exportarLinea(Empleado e) {
         double salario = e.calcularSalario();
